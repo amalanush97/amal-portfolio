@@ -1,0 +1,12 @@
+.author-dp {
+    width: 260px;
+    height: 256px;
+    border:2px solid #fff;
+    -moz-box-shadow: 0px 6px 5px #ccc;
+    -webkit-box-shadow: 0px 6px 5px #ccc;
+    box-shadow: 3px 11px 5px #ccc;
+    -moz-border-radius:190px;
+    -webkit-border-radius:190px;
+    border-radius:50%;
+  }
+  
