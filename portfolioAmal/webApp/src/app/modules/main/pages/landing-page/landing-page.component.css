@@ -9,5 +9,12 @@
     -webkit-border-radius:190px;
     border-radius:50%;
   }
+  .flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  
   
   
