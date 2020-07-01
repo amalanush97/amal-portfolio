@@ -8,9 +8,10 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 //modules
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { HeaderComponent } from './componenets/header/header.component';
+import { MainComponent } from './main.component';
 
 @NgModule({
-  declarations: [LandingPageComponent, HeaderComponent],
+  declarations: [LandingPageComponent, HeaderComponent, MainComponent],
   imports: [
     CommonModule,
     MainRoutingModule,
