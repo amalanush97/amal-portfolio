@@ -1,0 +1,8 @@
+.left-card {
+    min-height: 91vh;
+    
+}
+.container-fluid{
+    min-height: 100%;
+    overflow: hidden;
+}
