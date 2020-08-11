@@ -7,15 +7,7 @@ import {FirestoreServiceService} from "../../service/firestore-service.service"
 })
 export class BlogsHomeComponent implements OnInit {
   data:any;
-  recentChips : any =[
-    "Technology", "Music", "Angular", "Node",
-    "Travel", "Food", "Sports", "Django",
-    "Technology", "Music", "Angular", "Node",
-  ]
-  following:any = [
-    "Travel", "Food", "Sports", "Django",
-    "Technology", "Music", "Angular", "Node",
-  ]
+ 
   constructor(
     private $fireStore:FirestoreServiceService
   ) {}  

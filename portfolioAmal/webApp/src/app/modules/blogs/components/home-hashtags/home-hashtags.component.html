@@ -1,0 +1,30 @@
+<div class="card left-card">
+    <div class="card-body">
+        <div class="row pb-2  border-bottom solid">
+            <div class="col-12 recent-hashtags">
+                <h4 class="">Recent</h4>
+                <mat-chip-list #chipList aria-label="Category selection">
+                    <mat-chip [selectable]="true" *ngFor="let item of recentChips">
+                        <i class="fas fa-hashtag"></i>
+                        {{item}}
+                        <mat-icon matChipRemove>add</mat-icon>
+                    </mat-chip>
+                    <span class="view-more">View more</span>
+                </mat-chip-list>
+            </div>
+        </div>
+        <div class="row pt-2 recent-hashtags">
+            <div class="col-12">
+                <h4 class="">You are following</h4>
+                <mat-chip-list #chipList aria-label="Category selection">
+                    <mat-chip [selectable]="true" *ngFor="let item of following">
+                        <i class="fas fa-hashtag"></i>
+                        {{item}}
+                        <mat-icon matChipRemove>close</mat-icon>
+                    </mat-chip>
+                    <span class="view-more">View more</span>
+                </mat-chip-list>
+            </div>
+        </div>
+    </div>
+</div>

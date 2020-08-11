@@ -4,9 +4,12 @@ import {MatIconModule} from '@angular/material/icon';
 import { BlogsRoutingModule } from './blogs-routing.module';
 import { BlogsHomeComponent } from './pages/blogs-home/blogs-home.component';
 import { MatChipsModule } from '@angular/material/chips';
+import { HomeHashtagsComponent } from './components/home-hashtags/home-hashtags.component';
+import { LatestPostComponent } from './components/latest-post/latest-post.component';
+import { TrendingNowComponent } from './components/trending-now/trending-now.component';
 
 @NgModule({
-  declarations: [BlogsHomeComponent],
+  declarations: [BlogsHomeComponent, HomeHashtagsComponent, LatestPostComponent, TrendingNowComponent],
   imports: [
     CommonModule,
     BlogsRoutingModule,
