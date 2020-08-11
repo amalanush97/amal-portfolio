@@ -3,12 +3,32 @@
         <div class="col p-2 d-none d-lg-block">
             <div class="card left-card">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <div class="row pb-2  border-bottom solid">
+                        <div class="col-12 recent-hashtags">
+                            <h4 class="">Recent</h4>
+                            <mat-chip-list #chipList aria-label="Category selection">
+                                <mat-chip [selectable]="true" *ngFor="let item of recentChips">
+                                    <i class="fas fa-hashtag"></i>
+                                    {{item}}
+                                    <mat-icon matChipRemove>add</mat-icon>
+                                </mat-chip>
+                                <span class="view-more">View more</span>
+                            </mat-chip-list>
+                        </div>
+                    </div>
+                    <div class="row pt-2 recent-hashtags">
+                        <div class="col-12">
+                            <h4 class="">You are following</h4>
+                            <mat-chip-list #chipList aria-label="Category selection">
+                                <mat-chip [selectable]="true" *ngFor="let item of following">
+                                    <i class="fas fa-hashtag"></i>
+                                    {{item}}
+                                    <mat-icon matChipRemove>close</mat-icon>
+                                </mat-chip>
+                                <span class="view-more">View more</span>
+                            </mat-chip-list>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
