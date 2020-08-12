@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { AngularFireModule } from '@angular/fire';  
+import { AngularFireModule } from '@angular/fire';
 import {
   GoogleLoginProvider,
   FacebookLoginProvider,
@@ -34,7 +34,7 @@ import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-logi
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              '463212539145-q79bjg1f0rm6st3t8sfibmcgba58dgii.apps.googleusercontent.com'
+              '121962104338-d6a33pgrqtp435ir7lh395dojameokr0.apps.googleusercontent.com'
             ),
           },
           {

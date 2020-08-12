@@ -21,6 +21,9 @@ export class BlogsHomeComponent implements OnInit {
    },err =>{
      console.error(err);
    })
+   this.authService.authState.subscribe((user) => {
+   console.log(user)
+  });
    
   }
 
