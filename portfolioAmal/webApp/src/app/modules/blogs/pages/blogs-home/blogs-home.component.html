@@ -4,15 +4,19 @@
             <app-home-hashtags></app-home-hashtags>
         </div>
         <div class="col-lg-7 col-sm-12">
-            <div class="row pt-2 position-sticky">
+            <div class="row pt-2 pb-2 sticky-top top-buttons">
                 <div class="col-12">
                     <div class="d-flex flex-row-reverse bd-highlight">
-                        <div class="button button-1">New Post</div>  
+                        <div class="button button-1 ml-2">Trending</div>
+                        <div class="button button-1 ml-2">Technology</div>
+                        <div class="button button-1 ml-2">Health</div>
+                        <div class="button button-1 ml-2">Travel</div>
+                        <div class="button button-1 ml-2 d-none d-lg-block">Science</div>
                       </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 blog-list">
+                <div class="col-12">
                     <app-available-blogs></app-available-blogs>
                 </div>
             </div>
@@ -23,6 +27,19 @@
                     <app-latest-post></app-latest-post>
                     <!-- <app-trending-now></app-trending-now> -->
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="row fixed-bottom">
+        <div class="col-12">
+            <div class="d-flex flex-row-reverse bd-highlight bottom-fixed-part">
+                
+                <div class="wrapper d-none d-lg-block">
+                    <div class="link_wrapper">
+                        <a (click) = "login()">Subscribe us!</a>
+                      </div>
+                    
+                  </div>
             </div>
         </div>
     </div>
