@@ -1,0 +1,15 @@
+ .placeicon {
+     font-family: fontawesome
+ }
+
+ .custom-control-label::before {
+     background-color: #dee2e6;
+     border: #dee2e6
+ }
+
+ .login-btn{
+     color:white;
+ }
+ .btn-social{
+     color: white;
+ }

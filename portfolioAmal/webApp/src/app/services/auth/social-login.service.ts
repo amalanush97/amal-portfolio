@@ -13,8 +13,8 @@ export class SocialLoginService {
   ) { }
 
 
-  signInWithGoogle(): void {
-    this.authService.signIn(GoogleLoginProvider.PROVIDER_ID)
+  signInWithGoogle() {
+   return  this.authService.signIn(GoogleLoginProvider.PROVIDER_ID)
   }
 
   getLoginStatus() {

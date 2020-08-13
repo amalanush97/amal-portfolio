@@ -1,5 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-.site-name{
-    font-family: 'Fredoka One', cursive;
-    font-size: larger;
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+.site-name {
+  font-family: "Fredoka One", cursive;
+  font-size: larger;
 }
+
+.user-img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dropdown-menu {
+  top: 85%;
+  left: 87%;
+}
+/* mobile */
+
+@media only screen and (max-width: 600px) {
+  .dropdown-menu {
+    top: 85%;
+    left: 43%;
+    z-index: 1038;
+  }
+}
+ 
+
+
+/* ipad */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait){
+    .dropdown-menu {
+        top: 85%;
+        left: 74%;
+        z-index: 1038;
+      }
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: landscape){
+    .dropdown-menu {
+        top: 85%;
+        left: 80%;
+        z-index: 1038;
+      } 
+  } 
+
+  
+ /* IPAD pro */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait){
+    .dropdown-menu {
+        top: 85%;
+        left: 80%;
+        z-index: 1038;
+      }
+  }
+
+  /* landscape */
+  @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: landscape){
+      .dropdown-menu{
+        top: 85%;
+        left: 85%;
+      }
+  }
+
+
+
+ /* navbar links  */
+ .navbar {
+    color: w;
+    transition: transform .2s;
+}
+
+
+

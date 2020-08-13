@@ -1,39 +1,23 @@
-<nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-    <i class="fab fa-autoprefixer fa-2x d-inline-block"></i>
-   <span class="site-name">Know Amal?</span> 
-  </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarTogglerDemo02"
-    aria-controls="navbarTogglerDemo02"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="navbar  navbar-expand-lg navbar-dark bg-dark d-flex">
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav ml-auto mr-2 mt-2 mt-lg-0">
-      <li class="nav-item active" >
-        <a class="nav-link" href="#"
-          >About Me <span class="sr-only">(current)</span></a
-        >
-      </li>
-
+  <div class="mr-auto">
+    <a class="navbar-brand" style="color: azure;">
+      <i class="fab fa-autoprefixer fa-2x d-inline-block"></i>
+      <span class="site-name">Know Amal?</span>
+    </a>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mx-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#"
-          >Contact us <span class="sr-only">(current)</span></a
-        >
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search blog" />
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-        Search
-      </button>
-    </form>
+  </div>
+  <button class="btn btn-outline-success my-2 my-sm-0" *ngIf="isUserLoggedIn == false" (click)="signIn()" type="submit">Sign in</button>
+  <img [src]="user.photoUrl" class="user-img" *ngIf="isUserLoggedIn" alt="Person" width="96" height="96"
+    data-toggle="dropdown">
+  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item" style="cursor: pointer;" (click)="logout()">Logout</a>
+    <a class="dropdown-item" href="#">Help</a>
   </div>
 </nav>
