@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
+import { MatCardModule } from '@angular/material/card';
 import {
   GoogleLoginProvider,
   FacebookLoginProvider,
@@ -22,6 +23,7 @@ import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-logi
     SocialLoginModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatCardModule,
     AngularFireModule.initializeApp(environment.firebase, 'know amal'),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
