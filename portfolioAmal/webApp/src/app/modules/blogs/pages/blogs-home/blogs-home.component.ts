@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FirestoreServiceService} from "../../service/firestore-service.service"
-import { SocialAuthService } from "angularx-social-login";
-import { FacebookLoginProvider, GoogleLoginProvider } from "angularx-social-login";
+
 @Component({
   selector: 'app-blogs-home',
   templateUrl: './blogs-home.component.html',
@@ -12,7 +11,6 @@ export class BlogsHomeComponent implements OnInit {
  
   constructor(
     private $fireStore:FirestoreServiceService,
-    private authService: SocialAuthService
   ) {}  
 
   ngOnInit(): void {
@@ -21,19 +19,14 @@ export class BlogsHomeComponent implements OnInit {
    },err =>{
      console.error(err);
    })
-   this.authService.authState.subscribe((user) => {
-   console.log(user)
-  });
+ 
    
   }
 
 
 login = () =>{
-this.signInWithGoogle();
+
 }
 
-signInWithGoogle(): void {
-  this.authService.signIn(GoogleLoginProvider.PROVIDER_ID).then(x => console.log(x));
-}
 
 }
